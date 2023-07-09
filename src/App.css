@@ -1,0 +1,78 @@
+.vc-followCard {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 3rem;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.vc-followCard+.vc-followCard {
+    margin-top: 8px;
+}
+
+.vc-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.vc-followCard-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.vc-followCard-infoUserName {
+    opacity: 9;
+}
+
+.vc-followCard-logo {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 2rem;
+}
+
+.vc-followCard-button {
+    margin-left: 3rem;
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: .3s ease background-color;
+}
+
+.vc-followCard-button:hover {
+    opacity: .8;
+}
+
+.vc-followCard-text {
+    display: block;
+}
+
+.vc-followCard-button.is-following {
+    border: 3px solid azure;
+    background: transparent;
+    color: white;
+    width: 140px;
+}
+
+.vc-followCard-button.is-following:hover {
+    background-color: rgb(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+}
+
+.vc-followCard-button.is-following .vc-followCard-text {
+    display: none;
+}
+
+.vc-followCard-button.is-following:hover:hover .vc-followCard-stopFollow {
+    display: block;
+}
+
+.vc-followCard-stopFollow {
+    display: none;
+}
